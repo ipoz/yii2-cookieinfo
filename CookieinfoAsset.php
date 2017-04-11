@@ -7,7 +7,11 @@ use yii\web\AssetBundle;
 class CookieinfoAsset extends AssetBundle
 {
     public $css = [
-      'css/cookieinfo.css'
+        'css/cookieinfo.css'
+    ];
+
+    public $js = [
+        'js/cookieinfo.js'
     ];
 
     public function init()

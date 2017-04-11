@@ -1,4 +1,4 @@
-<div id="cookies-message">
+<div id="cookie-info-message">
     <?= $message ?>
-    <a href="javascript:CookieInfo.close();" id="cookie-info-accept">Rozumiem</a>
+    <a href="javascript:CookieInfo.close();" id="cookie-info-accept"><?= $acceptButtonLabel ?></a>
 </div>

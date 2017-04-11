@@ -1,25 +1,21 @@
-#cookies-message-container #cookies-message {
+#cookie-info-message {
     padding: 10px 0px;
     font-size: 14px;
     line-height: 22px;
-    border-bottom: 1px solid rgb(211, 208, 208);
+    border-top: 2px solid #94d100;
     text-align: center;
     position: fixed;
-    top: 0px;
-    background-color: #efefef;
+    bottom: 0px;
+    background-color: #e6e6e6;
+    color: #474747;
     width: 100%;
     z-index: 999;
 }
 
-#cookies-message-container #cookie-info-accept {
-    background-color: #9c0080;
+#cookie-info-message #cookie-info-accept {
+    background-color: #94d100;
     padding: 5px 10px;
-    color: #FFF;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    display: inline-block;
-    margin-left: 10px;
+    color: #303030;
     text-decoration: none;
     cursor: pointer;
 }

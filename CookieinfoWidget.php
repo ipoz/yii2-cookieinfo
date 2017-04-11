@@ -11,6 +11,11 @@ class CookieinfoWidget extends Widget
      */
     public $message = '';
 
+    /**
+     * @var string
+     */
+    public $acceptButtonLabel = '';
+
     public function init()
     {
         parent::init();
@@ -19,8 +24,13 @@ class CookieinfoWidget extends Widget
 
     public function run()
     {
+        if (isset($_COOKIE['cookieinfo'])) {
+            return;
+        }
+
         return $this->render('cookieinfo', [
-            'message' => $this->message
+            'message' => $this->message,
+            'acceptButtonLabel' => $this->acceptButtonLabel
         ]);
     }
 }
