@@ -11,7 +11,16 @@ class CookieinfoWidget extends Widget
      */
     public $message = '';
 
-    public function run(){
-        $this->render('cookieinfo');
+    public function init()
+    {
+        parent::init();
+        CookieinfoAsset::register($this->getView());
+    }
+
+    public function run()
+    {
+        return $this->render('cookieinfo', [
+            'message' => $this->message
+        ]);
     }
 }
