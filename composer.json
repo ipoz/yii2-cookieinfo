@@ -1,0 +1,20 @@
+{
+  "name": "ipoz/yii2-cookieinfo",
+  "description": "Cookie info",
+  "type": "yii2-extension",
+  "minimum-stability": "dev",
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "authors": [
+    {
+      "name": "ipoz",
+      "email": "rafal@ipoz.eu"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ipoz\\yii2\\cookieinfo\\": ""
+    }
+  }
+}
